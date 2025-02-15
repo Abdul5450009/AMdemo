@@ -1,0 +1,487 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(17, 17, 86);
+    padding-bottom: 100%;
+}
+.cursor {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.066);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    opacity: 20%;
+}
+.Heading1{
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    color: white;
+    font-size: 60px;
+    background: none;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.Heading3{
+    position: fixed;
+    top: 25%;
+    left: 5%;
+    color: white;
+    font-size: 30px;
+    background: none;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.p1{
+    position: fixed;
+    top: 35%;
+    left: 5%;
+    color: white;
+    font-size: 20px;
+    background: none;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(147, 147, 249);
+} 
+.p2{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    color: rgb(147, 147, 249);
+    background: none;
+}
+.target1{
+    color: white;
+}
+.target2{
+    color: white;
+}
+.target3{
+    color: white;
+}
+.target4{
+    color: white;
+}
+.target5{
+    color: white;
+}
+
+.navbar-column {
+    position: fixed;
+    top: 65%;
+    left: 5%;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    transform: translateY(-50%);
+    background: none; 
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease;
+    background: none; 
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: white;
+    background: none; 
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background: white; 
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link.active::after {
+    width: 100%;
+} 
+.navbar-column, 
+.nav-link, 
+.nav-link:focus, 
+.nav-link:visited {
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+#education{
+    position: absolute;
+    top: 110%;
+    color: white;
+}
+
+#skills{
+    position: absolute;
+    top: 200%;
+    color: red;
+}
+.Date1{
+    position: absolute;
+    color: rgb(102, 102, 245);
+    top: 120%;
+    left: 45%;
+    font-weight: light;
+}
+.Date2{
+    position: absolute;
+    color: rgb(102, 102, 245);
+    top: 145%;
+    left: 45%;
+    font-weight: light;
+}
+.Date3{
+    position: absolute;
+    color: rgb(102, 102, 245);
+    top: 170%;
+    left: 45%;
+    font-weight: light;
+}
+#about{
+    position: absolute;
+    top: 0;
+}
+.tittle1{
+    position: absolute;
+    top: 119%;
+    left: 55%;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(171, 172, 236);
+}
+.tittle2{
+    position: absolute;
+    top: 144%;
+    left: 55%;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(171, 172, 236);
+}
+.tittle3{
+    position: absolute;
+    top: 170%;
+    left: 55%;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(171, 172, 236);
+}
+.p4{
+    position: absolute;
+    top: 125%;
+    left: 55%;
+    color: white;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p5{
+    position: absolute;
+    top: 155%;
+    left: 55%;
+    color: white;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p6{
+    position: absolute;
+    top: 180%;
+    left: 55%;
+    color: white;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon1{
+    position: absolute;
+    top: 215%;
+    width: 30px;
+    left: 50%;
+}
+.icon2{
+    position: absolute;
+    top: 235%;
+    width: 30px;
+    left: 50%;
+}
+.icon3{
+    position: absolute;
+    top: 255%;
+    width: 30px;
+    left: 50%;
+}
+.icon4{
+    position: absolute;
+    top: 275%;
+    width: 30px;
+    left: 50%;
+    color: white;
+}
+.Tittle1{
+    position: absolute;
+    top: 213%;
+    left: 60%;
+    color: rgb(171, 172, 236);
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Tittle2{
+    position: absolute;
+    top: 233%;
+    left: 60%;
+    color: rgb(171, 172, 236);
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Tittle3{
+    position: absolute;
+    top: 253%;
+    left: 60%;
+    color: rgb(171, 172, 236);
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Tittle4{
+    position: absolute;
+    top: 273%;
+    left: 60%;
+    color: rgb(171, 172, 236);
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.P1{
+    position: absolute;
+    top: 223%;
+    left: 60%;
+    font-weight: light;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.P2{
+    position: absolute;
+    top: 243%;
+    left: 60%;
+    font-weight: light;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.P3{
+    position: absolute;
+    top: 263%;
+    left: 60%;
+    font-weight: light;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.P4{
+    position: absolute;
+    top: 283%;
+    left: 60%;
+    font-weight: light;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ICON1{
+    position: fixed;
+    top: 85%;
+    left: 5%;
+    width: 30px;
+}
+.ICON2{
+    position: fixed;
+    top: 85%;
+    left: 10%;
+    width: 30px;
+}
+.ICON3{
+    position: fixed;
+    top: 85%;
+    left: 15%;
+    width: 30px;
+}
+.Resume{
+    position: absolute;
+    top: 200%;
+    left: 50%;
+}
+.Resume a{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.right-up{
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+@media only screen and (max-width:1024px){
+    body{
+        padding-bottom: 125%;
+    }
+    .Heading1{
+        font-size: 55px;
+    }
+}
+@media only screen and (max-width:768px){
+    .Heading1{
+         font-size: 45px;
+    }
+    .Heading3{
+        top: 23%;
+        font-size: 25px;
+    }
+    .p1{
+        font-size: 15px;
+    }
+    .navbar-column{
+        top: 60%;
+        font-size: 15px;
+    }
+    .p2{
+        font-size: 12px;
+    }
+    .Date1{
+        top: 120%;
+        left: 50%;
+    }
+    .Date2{
+        top: 150%;
+        left: 50%;
+    }
+    .Date3{
+        top: 175%;
+        left: 50%;
+    }
+    .tittle1{
+        left: 65%;
+    }
+    .tittle2{
+        top: 150%;
+        left: 65%;
+    }
+    .tittle3{
+        top: 175%;
+        left: 65%;
+    }
+    .p4{
+        left: 65%;
+    }
+    .p5{
+        padding-top: 10px;
+        left: 65%;
+    }
+    .p6{
+        left: 65%;
+        padding-top: 35px;
+    }
+}
+@media only screen and (max-width:425px){
+    body{
+        padding-bottom: 300%;
+    }
+    .Heading1{
+        top: 5%;
+        position: absolute;
+    }
+    .Heading3{
+        top: 20%;
+        position: absolute;
+    }
+    .p1{
+        top: 32%;
+        position: absolute;
+    }
+    .p2{
+        top: 70%;
+        font-size: 15px;
+        left: 5%;
+    }
+    .ICON1{
+        top: 50%;
+        position: absolute;
+    }
+    .ICON2{
+        top: 50%;
+        left: 15%;
+        position: absolute;
+    }
+    .ICON3{
+        top: 50%;
+        left: 25%;
+        position: absolute;
+    }
+    .navbar-column{
+        position: absolute;
+    }
+    .nav1{
+        position: absolute;
+        top: 55%;
+    }
+    .Date1{
+        top: 220%;
+        left: 8%;
+    }
+    .tittle1{
+        top: 220%;
+        left: 35%;
+    }
+    .p4{
+        top: 230%;
+        left: 35%;
+    }
+    .Date2{
+        top: 255%;
+        left: 8%;
+    }
+    .tittle2{
+        top: 255%;
+        left: 35%;
+    }
+    .p5{
+        top: 265%;
+        left: 35%;
+    }
+    .Date3{
+        top: 285%;
+        left: 8%;
+    }
+    .tittle3{
+        top: 285%;
+        left: 35%;
+    }
+    .p6{
+        top: 292%;
+        left: 35%;
+    }
+    .nav2{
+        position: absolute;
+        top: 850%;
+    }
+    #education{
+        top: 221%;
+        color: red;
+    }
+    #about{
+        top: 2%;
+        color: red;
+    }
+    #skills{
+        position: absolute;
+        top: 450%;
+    }
+}
